@@ -223,7 +223,7 @@ The 38 agent personas aren't a gimmick. When I'm working on a documentary and ne
 
 ## Stack
 
-- **MacBook Air M3** — primary
+- **MacBook Air M3** — primary workstation (Ghostty + tmux, replaced iTerm2 Feb 2026)
 - **Mac Mini M4** — headless server, always on (Paris), Claude Code 24/7
 - **PC Windows RTX 5090** — ComfyUI GPU inference, accessible via Tailscale
 - **iPhone/iPad** — Blink Shell + mosh for mobile Claude Code access
