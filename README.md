@@ -24,7 +24,7 @@ This is a living document of my Claude Code configuration. Not a tutorial, not a
 ├── BACKLOG.md             # Centralized project tracker
 ├── settings.json          # Hooks, statusline, permissions
 ├── agents/                # 38 creative consultant personas
-├── skills/                # 58 custom skills
+├── skills/                # 109 skills (custom + plugin-managed)
 ├── scripts/               # Automation (notifications, sync, etc.)
 ├── memory/                # Inter-session persistence
 ├── sounds/                # Notification sounds
@@ -50,36 +50,48 @@ They can be invoked individually for creative consultation or debated against ea
 
 The personas are private by design. The concept is public: a system that lets you think through creative decisions with the worldviews of artists and thinkers you admire.
 
-## Skills (58)
+## Skills (109)
 
-Organized by domain:
+Mix of custom-built and plugin-managed skills. Organized by domain:
 
-### Creative Writing & Narrative
+### Creative Writing & Narrative (6)
 `cw-brainstorming` `cw-prose-writing` `cw-story-critique` `cw-style-skill-creator` `cw-official-docs` `cw-router`
 
 ### Film & Creative Production
-`pitch` (creative specs for films, games, installations, performances) `interview` (specs-driven development via 20-30 technical questions)
+`pitch` (creative specs: films, games, installations, performances) `brainstorming` (mandatory before any creative work) `transcribe` `speech` `pdf` `doc`
 
-### Image & Video Generation
-`fal-generate` `fal-image-edit` `fal-upscale` `fal-audio` `fal-workflow` `fal-platform` `imagegen` `sora` `nanobanana` `logo-creator` `banner-creator` `canvas-design`
+### Image & Video Generation (12)
+`fal-generate` `fal-image-edit` `fal-upscale` `fal-audio` `fal-workflow` `fal-platform` `imagegen` `sora` `nanobanana` `logo-creator` `banner-creator` `canvas-design` `image-manipulation-imagemagick` `video-downloader`
 
-### Frontend & Web
-`frontend-design` `interactive-portfolio` `scroll-experience` `3d-web-experience` `algorithmic-art` `claude-d3js-skill`
+### 3D, Animation & Games (7)
+`3d-web-experience` `develop-web-game` `game-development` `motion-canvas` `remotion` `remotion-best-practices` `algorithmic-art`
 
-### SEO & Visibility
-`seo` `seo-audit` `seo-page` `seo-geo` `seo-competitor-pages` `seo-hreflang` `seo-sitemap` `seo-plan` `seo-schema` `seo-visual`
+### Frontend & Web (8)
+`frontend-design` `interactive-portfolio` `scroll-experience` `claude-d3js-skill` `excalidraw-diagram-generator` `web-artifacts-builder` `web-design-reviewer` `webapp-testing`
 
-### Research & Data
-`data-query` `reddit` `twitter` `x-research` `producthunt` `requesthunt` `domain-hunter`
+### SEO & Visibility (13)
+`seo` `seo-audit` `seo-page` `seo-geo` `seo-competitor-pages` `seo-hreflang` `seo-images` `seo-sitemap` `seo-plan` `seo-schema` `seo-technical` `seo-content` `seo-programmatic`
 
-### Communication
-`briefing` (daily digest: Gmail, Calendar, Discord, GitHub)
+### Research & Data (8)
+`data-query` `reddit` `twitter` `x-research` `producthunt` `requesthunt` `domain-hunter` `agentic-eval`
 
-### Development
-`brainstorming` (mandatory before any creative work) `mermaid-diagrams` `develop-web-game` `game-development` `motion-canvas` `remotion` `video` `transcribe`
+### Development Workflow (17)
+`dispatching-parallel-agents` `executing-plans` `finishing-a-development-branch` `gh-address-comments` `gh-fix-ci` `git-commit` `jupyter-notebook` `mermaid-diagrams` `playwright` `receiving-code-review` `requesting-code-review` `refactor` `skill-creator` `subagent-driven-development` `systematic-debugging` `verification-before-completion` `writing-plans`
 
-### System
-`status` `backup` `sync` `projects` `notes` `backlog` `bootstrap` `tmux-start` `cleanup` `dev` `skill-creator`
+### Security (3)
+`security-best-practices` `security-ownership-map` `security-threat-model`
+
+### Communication & Productivity (8)
+`briefing` `inbox-sort` `linear` `notion-knowledge-capture` `notion-meeting-intelligence` `notion-research-documentation` `notion-spec-to-implementation` `prd`
+
+### Deployment (5)
+`cloudflare-deploy` `netlify-deploy` `render-deploy` `vercel-deploy` `yeet`
+
+### Documentation & Files (6)
+`pdf` `pdftk-server` `pptx` `spreadsheet` `screenshot` `mcp-builder`
+
+### System & Tooling (8)
+`status` `backup` `sync` `bootstrap` `cleanup` `skill-creator` `mcp-cli` `compta`
 
 ## Specs-Driven Development
 
